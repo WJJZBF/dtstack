@@ -1,0 +1,2026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="23773" name="C端触点分析" >
+    <node_order><![CDATA[10]]></node_order>
+    <details><![CDATA[]]></details>
+    <testsuite id="23774" name="商业价值分析" >
+        <node_order><![CDATA[1]]></node_order>
+        <details><![CDATA[]]></details>
+        <testsuite id="23777" name="关键指标总览" >
+            <node_order><![CDATA[0]]></node_order>
+            <details><![CDATA[]]></details>
+
+            <testcase internalid="23781" name="按日查询和按月查询按钮的功能">
+                <node_order><![CDATA[1000]]></node_order>
+                <externalid><![CDATA[547]]></externalid>
+                <version><![CDATA[1]]></version>
+                <summary><![CDATA[]]></summary>
+                <preconditions><![CDATA[]]></preconditions>
+                <execution_type><![CDATA[1]]></execution_type>
+                <importance><![CDATA[2]]></importance>
+                <estimated_exec_duration></estimated_exec_duration>
+                <status>1</status>
+                <steps>
+                    <step>
+                        <step_number><![CDATA[1]]></step_number>
+                        <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;点击按日查询-&gt;点击日期下拉框</p>
+]]></actions>
+                        <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、最近1天、最近七天</p>
+]]></expectedresults>
+                        <execution_type><![CDATA[1]]></execution_type>
+                    </step>
+
+                    <step>
+                        <step_number><![CDATA[2]]></step_number>
+                        <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;点击按月查询-&gt;点击日期下拉框</p>
+]]></actions>
+                        <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、月份（201805）</p>
+]]></expectedresults>
+                        <execution_type><![CDATA[1]]></execution_type>
+                    </step>
+                </steps>
+            </testcase>
+
+            <testcase internalid="23788" name="查询按钮的功能验证">
+                <node_order><![CDATA[1001]]></node_order>
+                <externalid><![CDATA[549]]></externalid>
+                <version><![CDATA[1]]></version>
+                <summary><![CDATA[]]></summary>
+                <preconditions><![CDATA[]]></preconditions>
+                <execution_type><![CDATA[1]]></execution_type>
+                <importance><![CDATA[2]]></importance>
+                <estimated_exec_duration></estimated_exec_duration>
+                <status>1</status>
+                <steps>
+                    <step>
+                        <step_number><![CDATA[1]]></step_number>
+                        <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;点击查询按钮</p>
+]]></actions>
+                        <expectedresults><![CDATA[<p>
+	页面刷新，关键指标总览数据刷新</p>
+]]></expectedresults>
+                        <execution_type><![CDATA[1]]></execution_type>
+                    </step>
+
+                    <step>
+                        <step_number><![CDATA[2]]></step_number>
+                        <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;点击查询按钮</p>
+]]></actions>
+                        <expectedresults><![CDATA[<p>
+	页面刷新，关键指标总览数据刷新</p>
+]]></expectedresults>
+                        <execution_type><![CDATA[1]]></execution_type>
+                    </step>
+                </steps>
+            </testcase>
+
+            <testcase internalid="23792" name="查看数据按钮的功能验证">
+                <node_order><![CDATA[1002]]></node_order>
+                <externalid><![CDATA[550]]></externalid>
+                <version><![CDATA[1]]></version>
+                <summary><![CDATA[]]></summary>
+                <preconditions><![CDATA[]]></preconditions>
+                <execution_type><![CDATA[1]]></execution_type>
+                <importance><![CDATA[2]]></importance>
+                <estimated_exec_duration></estimated_exec_duration>
+                <status>1</status>
+                <steps>
+                    <step>
+                        <step_number><![CDATA[1]]></step_number>
+                        <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;鼠标hover商品浏览次数-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                        <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                        <execution_type><![CDATA[1]]></execution_type>
+                    </step>
+                </steps>
+            </testcase>
+
+            <testcase internalid="23795" name="导出按钮的功能验证">
+                <node_order><![CDATA[1003]]></node_order>
+                <externalid><![CDATA[551]]></externalid>
+                <version><![CDATA[1]]></version>
+                <summary><![CDATA[]]></summary>
+                <preconditions><![CDATA[]]></preconditions>
+                <execution_type><![CDATA[1]]></execution_type>
+                <importance><![CDATA[2]]></importance>
+                <estimated_exec_duration></estimated_exec_duration>
+                <status>1</status>
+                <steps>
+                    <step>
+                        <step_number><![CDATA[1]]></step_number>
+                        <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;鼠标hover商品浏览次数-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                        <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                        <execution_type><![CDATA[1]]></execution_type>
+                    </step>
+                </steps>
+            </testcase>
+        </testsuite><testsuite id="23778" name="商品品类数量占比" >
+        <node_order><![CDATA[1]]></node_order>
+        <details><![CDATA[]]></details>
+
+        <testcase internalid="23798" name="日期选择框的功能">
+            <node_order><![CDATA[3]]></node_order>
+            <externalid><![CDATA[552]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[3]]></step_number>
+                    <actions><![CDATA[<p>
+	点击日期选择下拉框-&gt;点击向左的箭头&lt;&lt;-&gt;点击向右的箭头&gt;&gt;</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	定位到2018年5月份，定位到2020年5月份（当前时间为2019年5月份）</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[4]]></step_number>
+                    <actions><![CDATA[<p>
+	点击日期选择下拉框-&gt;点击向左的箭头&lt;-&gt;点击向右的箭头&gt;</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	定位到2019年4月，定位到2019年6月（当前时间为2019年5月份）</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23802" name=" 日期的开始时间不得晚于结束时间">
+            <node_order><![CDATA[4]]></node_order>
+            <externalid><![CDATA[553]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	选择结束时间为2019年4月&gt;点击开始时间下拉框</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	4月之后的时间置灰</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23805" name="查询按钮的功能验证">
+            <node_order><![CDATA[5]]></node_order>
+            <externalid><![CDATA[554]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	选择日期为：2019年1月-2019年5月-&gt;点击查询</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，曝光商品分布、不同品类商品关键指标趋势、购买转化率数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[2]]></step_number>
+                    <actions><![CDATA[<p>
+	选择日期为：2019年1月-2019年5月-&gt;点击查询-&gt;选择任一业务触点</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，曝光商品分布、不同品类商品关键指标趋势、购买转化率数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23809" name="查看数据按钮的功能验证">
+            <node_order><![CDATA[1003]]></node_order>
+            <externalid><![CDATA[555]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;鼠标hover购买转化率-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23812" name=" 导出按钮的功能验证">
+            <node_order><![CDATA[1004]]></node_order>
+            <externalid><![CDATA[556]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;鼠标hover购买转化率-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+    </testsuite><testsuite id="23815" name="商品浏览转化率" >
+        <node_order><![CDATA[2]]></node_order>
+        <details><![CDATA[]]></details>
+
+        <testcase internalid="23816" name="按日查询和按月查询按钮的功能">
+            <node_order><![CDATA[1000]]></node_order>
+            <externalid><![CDATA[557]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;定位到商品浏览转化率-&gt;点击按日查询-&gt;点击日期下拉框</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、最近1天、最近七天</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[2]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;定位到商品浏览转化率-&gt;点击按月查询-&gt;点击日期下拉框</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、月份（201805）</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23820" name="查询按钮的功能验证">
+            <node_order><![CDATA[1001]]></node_order>
+            <externalid><![CDATA[558]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，商品浏览转化率数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[2]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，商品浏览转化率数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23824" name="查看数据按钮的功能验证">
+            <node_order><![CDATA[1002]]></node_order>
+            <externalid><![CDATA[559]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;鼠标hover商品浏览转化率的散点图-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23827" name="导出按钮的功能验证">
+            <node_order><![CDATA[1003]]></node_order>
+            <externalid><![CDATA[560]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;鼠标hover商品浏览转化率的散点图-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+    </testsuite><testsuite id="23830" name="消费商品转化率" >
+        <node_order><![CDATA[4]]></node_order>
+        <details><![CDATA[]]></details>
+
+        <testcase internalid="23831" name="按日查询和按月查询按钮的功能">
+            <node_order><![CDATA[1000]]></node_order>
+            <externalid><![CDATA[561]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;定位到消费商品转化率-&gt;点击按日查询-&gt;点击日期下拉框</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、最近1天、最近七天</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[2]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;定位到消费商品转化率-&gt;点击按月查询-&gt;点击日期下拉框</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、月份（201805）</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23835" name="查询按钮的功能验证">
+            <node_order><![CDATA[1001]]></node_order>
+            <externalid><![CDATA[562]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，商品价值分析数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[2]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，商品价值分析数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[3]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择任一商品品类名称-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，商品价值分析数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[4]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择任一商品品类名称-&gt;选择任一商品SKU-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，商品价值分析数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[5]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择任一商品品类名称-&gt;选择任一商品SKU-&gt;选择任一商品名称-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，商品价值分析数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23839" name="查看数据按钮的功能验证">
+            <node_order><![CDATA[1002]]></node_order>
+            <externalid><![CDATA[563]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;鼠标hover商品价值分析-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23842" name="导出按钮的功能验证">
+            <node_order><![CDATA[1003]]></node_order>
+            <externalid><![CDATA[564]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击商业价值分析-&gt;鼠标hover商品价值分析-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+    </testsuite></testsuite><testsuite id="23775" name="用户活跃度分析" >
+    <node_order><![CDATA[2]]></node_order>
+    <details><![CDATA[]]></details>
+    <testsuite id="23848" name="关键指标总览" >
+        <node_order><![CDATA[1]]></node_order>
+        <details><![CDATA[]]></details>
+
+        <testcase internalid="23852" name="按日查询和按月查询按钮的功能">
+            <node_order><![CDATA[1000]]></node_order>
+            <externalid><![CDATA[565]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析-&gt;点击按日查询-&gt;点击日期下拉框</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、最近1天、最近七天</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[2]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析-&gt;点击按月查询-&gt;点击日期下拉框</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、月份（201805）</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23856" name="查询按钮的功能验证">
+            <node_order><![CDATA[1001]]></node_order>
+            <externalid><![CDATA[566]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，登录用户、登录用户占比数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[2]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，登录用户、登录用户占比数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[3]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择省份为台湾-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，登录用户、登录用户占比数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[4]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择省份为台湾-&gt;选择城市为台北-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，登录用户、登录用户占比数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23860" name="查看数据按钮的功能验证">
+            <node_order><![CDATA[1002]]></node_order>
+            <externalid><![CDATA[567]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析分析-&gt;鼠标hover登录用户-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23863" name="导出按钮的功能验证">
+            <node_order><![CDATA[1003]]></node_order>
+            <externalid><![CDATA[568]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析分析-&gt;鼠标hover登录用户-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+    </testsuite><testsuite id="23849" name="关键指标趋势" >
+    <node_order><![CDATA[2]]></node_order>
+    <details><![CDATA[]]></details>
+
+    <testcase internalid="23869" name="日期选择框的功能">
+        <node_order><![CDATA[0]]></node_order>
+        <externalid><![CDATA[569]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	点击日期选择下拉框-&gt;点击向左的箭头&lt;&lt;-&gt;点击向右的箭头&gt;&gt;</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	定位到2018年5月份，定位到2020年5月份（当前时间为2019年5月份）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[4]]></step_number>
+                <actions><![CDATA[<p>
+	点击日期选择下拉框-&gt;点击向左的箭头&lt;-&gt;点击向右的箭头&gt;</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	定位到2019年4月，定位到2019年6月（当前时间为2019年5月份）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23873" name="日期的开始时间不得晚于结束时间">
+        <node_order><![CDATA[1]]></node_order>
+        <externalid><![CDATA[570]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择结束时间为2019年4月&gt;点击开始时间下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	4月之后的时间置灰</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23886" name="查询按钮的功能验证">
+        <node_order><![CDATA[2]]></node_order>
+        <externalid><![CDATA[574]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，登录用户及占比变化趋势数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，登录用户及占比变化趋势数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择省份为台湾-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，登录用户及占比变化趋势数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[4]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择省份为台湾-&gt;选择城市为台北-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，登录用户及占比变化趋势数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23880" name="查看数据按钮的功能验证">
+        <node_order><![CDATA[3]]></node_order>
+        <externalid><![CDATA[572]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析-&gt;鼠标hover登录用户及占比变化趋势-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23883" name="导出按钮的功能验证">
+        <node_order><![CDATA[4]]></node_order>
+        <externalid><![CDATA[573]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析-&gt;鼠标hover登录用户及占比变化趋势-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+</testsuite><testsuite id="23850" name="不同活跃时段客群分布" >
+    <node_order><![CDATA[3]]></node_order>
+    <details><![CDATA[]]></details>
+
+    <testcase internalid="23894" name="按日查询和按月查询按钮的功能">
+        <node_order><![CDATA[0]]></node_order>
+        <externalid><![CDATA[575]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析-&gt;点击按日查询-&gt;点击日期下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、最近1天、最近七天</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析-&gt;点击按月查询-&gt;点击日期下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、月份（201805）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23898" name="查询按钮的功能验证">
+        <node_order><![CDATA[1001]]></node_order>
+        <externalid><![CDATA[576]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，不同时段访问情况、不同时段访问的用户类型分布数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，不同时段访问情况、不同时段访问的用户类型分布数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择省份为台湾-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，不同时段访问情况、不同时段访问的用户类型分布数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[4]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择省份为台湾-&gt;选择城市为台北-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，不同时段访问情况、不同时段访问的用户类型分布数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23904" name="查看数据按钮的功能验证">
+        <node_order><![CDATA[1002]]></node_order>
+        <externalid><![CDATA[577]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击不同活跃时段客群分布-&gt;鼠标hover不同访问时段情况-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23907" name="导出按钮的功能验证">
+        <node_order><![CDATA[1003]]></node_order>
+        <externalid><![CDATA[578]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击不同活跃时段客群分布-&gt;鼠标hover登录用户-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+</testsuite><testsuite id="23943" name="不同时段用户偏好" >
+    <node_order><![CDATA[4]]></node_order>
+    <details><![CDATA[]]></details>
+
+    <testcase internalid="23945" name="按日查询和按月查询按钮的功能">
+        <node_order><![CDATA[1000]]></node_order>
+        <externalid><![CDATA[579]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析-&gt;定位到不同时段用户偏好-&gt;点击按日查询-&gt;点击日期下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、最近1天、最近七天</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析-&gt;定位到不同时段用户偏好点击按月查询-&gt;点击日期下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、月份（201805）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23949" name="查询按钮的功能验证">
+        <node_order><![CDATA[1001]]></node_order>
+        <externalid><![CDATA[580]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，时段访问用户的浏览偏好、时段访问用户的消费偏好、时段访问用户的搜索热词、热词搜索明细表数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，时段访问用户的浏览偏好、时段访问用户的消费偏好、时段访问用户的搜索热词、热词搜索明细表数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择省份为台湾-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，时段访问用户的浏览偏好、时段访问用户的消费偏好、时段访问用户的搜索热词、热词搜索明细表数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[4]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择省份为台湾-&gt;选择城市为台北-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，时段访问用户的浏览偏好、时段访问用户的消费偏好、时段访问用户的搜索热词、热词搜索明细表数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[5]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择省份为台湾-&gt;选择城市为台北-&gt;选择时间段为8-12-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，时段访问用户的浏览偏好、时段访问用户的消费偏好、时段访问用户的搜索热词、热词搜索明细表数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23955" name="查看数据按钮的功能验证">
+        <node_order><![CDATA[1002]]></node_order>
+        <externalid><![CDATA[581]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析分析-&gt;鼠标hover时段访问用户的搜索热词-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23958" name="导出按钮的功能验证">
+        <node_order><![CDATA[1003]]></node_order>
+        <externalid><![CDATA[582]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击用户活跃度分析分析-&gt;鼠标hover时段访问用户的搜索热词-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+</testsuite></testsuite><testsuite id="23776" name="内容影响力分析" >
+    <node_order><![CDATA[3]]></node_order>
+    <details><![CDATA[]]></details>
+    <testsuite id="23962" name="关键指标总览" >
+        <node_order><![CDATA[1]]></node_order>
+        <details><![CDATA[]]></details>
+
+        <testcase internalid="23969" name="按日查询和按月查询按钮的功能">
+            <node_order><![CDATA[1000]]></node_order>
+            <externalid><![CDATA[583]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;点击按日查询-&gt;点击日期下拉框</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、最近1天、最近七天</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[2]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;点击按月查询-&gt;点击日期下拉框</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、月份（201805）</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23973" name="查询按钮的功能验证">
+            <node_order><![CDATA[1001]]></node_order>
+            <externalid><![CDATA[584]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，内容浏览量、内容访客数、内容跳出率数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[2]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，内容浏览量、内容访客数、内容跳出率数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+
+                <step>
+                    <step_number><![CDATA[3]]></step_number>
+                    <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择访客类型为：登录用户-&gt;点击查询按钮</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	页面刷新，内容浏览量、内容访客数、内容跳出率数据刷新</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23979" name="查看数据按钮的功能验证">
+            <node_order><![CDATA[1002]]></node_order>
+            <externalid><![CDATA[585]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover登录用户-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+
+        <testcase internalid="23982" name="导出按钮的功能验证">
+            <node_order><![CDATA[1003]]></node_order>
+            <externalid><![CDATA[586]]></externalid>
+            <version><![CDATA[1]]></version>
+            <summary><![CDATA[]]></summary>
+            <preconditions><![CDATA[]]></preconditions>
+            <execution_type><![CDATA[1]]></execution_type>
+            <importance><![CDATA[2]]></importance>
+            <estimated_exec_duration></estimated_exec_duration>
+            <status>1</status>
+            <steps>
+                <step>
+                    <step_number><![CDATA[1]]></step_number>
+                    <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover登录用户-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                    <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                    <execution_type><![CDATA[1]]></execution_type>
+                </step>
+            </steps>
+        </testcase>
+    </testsuite><testsuite id="23963" name="历史变化趋势" >
+    <node_order><![CDATA[2]]></node_order>
+    <details><![CDATA[]]></details>
+
+    <testcase internalid="23986" name="日期选择框的功能">
+        <node_order><![CDATA[3]]></node_order>
+        <externalid><![CDATA[587]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	点击日期选择下拉框-&gt;点击向左的箭头&lt;&lt;-&gt;点击向右的箭头&gt;&gt;</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	定位到2018年5月份，定位到2020年5月份（当前时间为2019年5月份）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[4]]></step_number>
+                <actions><![CDATA[<p>
+	点击日期选择下拉框-&gt;点击向左的箭头&lt;-&gt;点击向右的箭头&gt;</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	定位到2019年4月，定位到2019年6月（当前时间为2019年5月份）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23990" name="日期的开始时间不得晚于结束时间">
+        <node_order><![CDATA[4]]></node_order>
+        <externalid><![CDATA[588]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择结束时间为2019年4月&gt;点击开始时间下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	4月之后的时间置灰</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23993" name="查询按钮的功能验证">
+        <node_order><![CDATA[5]]></node_order>
+        <externalid><![CDATA[589]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择日期为：2019年1月-2019年5月-&gt;点击查询</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，访客数量趋势和浏览量趋势数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	选择日期为：2019年1月-2019年5月-&gt;点击查询-&gt;选择任一业务触点-&gt;点击查询</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，访客数量趋势和浏览量趋势数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	选择日期为：2019年1月-2019年5月-&gt;点击查询-&gt;选择任一业务触点-&gt;选择访客类型为：登录用户</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，访客数量趋势和浏览量趋势数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="23997" name="查看数据按钮的功能验证">
+        <node_order><![CDATA[1003]]></node_order>
+        <externalid><![CDATA[590]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover访客数量趋势-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24000" name="导出按钮的功能验证">
+        <node_order><![CDATA[1004]]></node_order>
+        <externalid><![CDATA[591]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover访客数量趋势-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+</testsuite><testsuite id="23964" name="内容分类对比" >
+    <node_order><![CDATA[3]]></node_order>
+    <details><![CDATA[]]></details>
+
+    <testcase internalid="24005" name="日期选择框的功能">
+        <node_order><![CDATA[3]]></node_order>
+        <externalid><![CDATA[592]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	点击日期选择下拉框-&gt;点击向左的箭头&lt;&lt;-&gt;点击向右的箭头&gt;&gt;</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	定位到2018年5月份，定位到2020年5月份（当前时间为2019年5月份）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[4]]></step_number>
+                <actions><![CDATA[<p>
+	点击日期选择下拉框-&gt;点击向左的箭头&lt;-&gt;点击向右的箭头&gt;</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	定位到2019年4月，定位到2019年6月（当前时间为2019年5月份）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24009" name="日期的开始时间不得晚于结束时间">
+        <node_order><![CDATA[4]]></node_order>
+        <externalid><![CDATA[593]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择结束时间为2019年4月&gt;点击开始时间下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	4月之后的时间置灰</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24012" name="查询按钮的功能验证">
+        <node_order><![CDATA[5]]></node_order>
+        <externalid><![CDATA[594]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择日期为：2019年1月-2019年5月-&gt;点击查询</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容访客数与内容浏览数数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	选择日期为：2019年1月-2019年5月-&gt;点击查询-&gt;选择任一业务触点-&gt;点击查询</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容访客数与内容浏览数数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	选择日期为：2019年1月-2019年5月-&gt;点击查询-&gt;选择任一业务触点-&gt;选择访客类型为：登录用户</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容访客数与内容浏览数数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24017" name="查看数据按钮的功能验证">
+        <node_order><![CDATA[1003]]></node_order>
+        <externalid><![CDATA[595]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover内容访客数与内容浏览数-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24020" name="导出按钮的功能验证">
+        <node_order><![CDATA[1004]]></node_order>
+        <externalid><![CDATA[596]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover内容访客数与内容浏览数-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+</testsuite><testsuite id="23965" name="内容热度分析" >
+    <node_order><![CDATA[4]]></node_order>
+    <details><![CDATA[]]></details>
+
+    <testcase internalid="24024" name="按日查询和按月查询按钮的功能">
+        <node_order><![CDATA[1000]]></node_order>
+        <externalid><![CDATA[597]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;点击按日查询-&gt;点击日期下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、最近1天、最近七天</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;点击按月查询-&gt;点击日期下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、月份（201805）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24028" name="查询按钮的功能验证">
+        <node_order><![CDATA[1001]]></node_order>
+        <externalid><![CDATA[598]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容浏览量、内容访客数、内容跳出率数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容浏览量、内容访客数、内容跳出率数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择访客类型为：登录用户-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容浏览量、内容访客数、内容跳出率数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24033" name="查看数据按钮的功能验证">
+        <node_order><![CDATA[1002]]></node_order>
+        <externalid><![CDATA[599]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover平均浏览时长-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24036" name="导出按钮的功能验证">
+        <node_order><![CDATA[1003]]></node_order>
+        <externalid><![CDATA[600]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover平均浏览时长-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+</testsuite><testsuite id="23966" name="内容访问情况" >
+    <node_order><![CDATA[5]]></node_order>
+    <details><![CDATA[]]></details>
+
+    <testcase internalid="24040" name="按日查询和按月查询按钮的功能">
+        <node_order><![CDATA[1000]]></node_order>
+        <externalid><![CDATA[601]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;点击按日查询-&gt;点击日期下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、最近1天、最近七天</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;点击按月查询-&gt;点击日期下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	下拉框展示：搜索框、月份（201805）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24044" name="查询按钮的功能验证">
+        <node_order><![CDATA[1001]]></node_order>
+        <externalid><![CDATA[602]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容访问情况列表数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容访问情况列表数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	选择按日查询-&gt;日期选择：最近1天-&gt;选择任一业务触点-&gt;选择任一内容类型-&gt;点击查询按钮</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容访问情况列表数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24049" name="查看数据按钮的功能验证">
+        <node_order><![CDATA[1002]]></node_order>
+        <externalid><![CDATA[603]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover内容访问情况-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24052" name="导出按钮的功能验证">
+        <node_order><![CDATA[1003]]></node_order>
+        <externalid><![CDATA[604]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover内容访问情况-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+</testsuite><testsuite id="23967" name="内容搜索分析" >
+    <node_order><![CDATA[6]]></node_order>
+    <details><![CDATA[]]></details>
+
+    <testcase internalid="24056" name="日期选择框的功能">
+        <node_order><![CDATA[3]]></node_order>
+        <externalid><![CDATA[605]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	点击日期选择下拉框-&gt;点击向左的箭头&lt;&lt;-&gt;点击向右的箭头&gt;&gt;</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	定位到2018年5月份，定位到2020年5月份（当前时间为2019年5月份）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[4]]></step_number>
+                <actions><![CDATA[<p>
+	点击日期选择下拉框-&gt;点击向左的箭头&lt;-&gt;点击向右的箭头&gt;</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	定位到2019年4月，定位到2019年6月（当前时间为2019年5月份）</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24060" name="日期的开始时间不得晚于结束时间">
+        <node_order><![CDATA[4]]></node_order>
+        <externalid><![CDATA[606]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择结束时间为2019年4月&gt;点击开始时间下拉框</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	4月之后的时间置灰</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24063" name="查询按钮的功能验证">
+        <node_order><![CDATA[5]]></node_order>
+        <externalid><![CDATA[607]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	选择日期为：2019年1月-2019年5月-&gt;点击查询</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容访客数与内容浏览数数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[2]]></step_number>
+                <actions><![CDATA[<p>
+	选择日期为：2019年1月-2019年5月-&gt;点击查询-&gt;选择任一业务触点-&gt;点击查询</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容访客数与内容浏览数数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+
+            <step>
+                <step_number><![CDATA[3]]></step_number>
+                <actions><![CDATA[<p>
+	选择日期为：2019年1月-2019年5月-&gt;点击查询-&gt;选择任一业务触点-&gt;选择访客类型为：登录用户</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	页面刷新，内容访客数与内容浏览数数据刷新</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24068" name="查看数据按钮的功能验证">
+        <node_order><![CDATA[1003]]></node_order>
+        <externalid><![CDATA[608]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover搜索结果分布-&gt;点击...-&gt;点击查看数据</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	弹出数据弹窗，弹窗内显示相应数据</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+
+    <testcase internalid="24071" name="导出按钮的功能验证">
+        <node_order><![CDATA[1004]]></node_order>
+        <externalid><![CDATA[609]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+        <estimated_exec_duration></estimated_exec_duration>
+        <status>1</status>
+        <steps>
+            <step>
+                <step_number><![CDATA[1]]></step_number>
+                <actions><![CDATA[<p>
+	进入C端触点分析-&gt;点击内容影响力分析-&gt;鼠标hover搜索结果分布-&gt;点击...-&gt;点击导出</p>
+]]></actions>
+                <expectedresults><![CDATA[<p>
+	自动下载Excel表格，表格中的数据与查看数据弹窗一致</p>
+]]></expectedresults>
+                <execution_type><![CDATA[1]]></execution_type>
+            </step>
+        </steps>
+    </testcase>
+</testsuite></testsuite></testsuite>
